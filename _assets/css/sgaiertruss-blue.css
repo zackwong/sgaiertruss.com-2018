@@ -1,0 +1,438 @@
+/* =============================== CSS STRUCTURE ===============================
+
+01. Primary color
+02. Primary background
+03. Primary border
+04. Aqua color
+05. Blue color
+
+============================================================================= */
+
+/*
+Primary color
+=========================== */
+::selection {
+    background-color: #3498db;
+    color: #fff;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong,
+.btn-link,
+.btn-link:hover,
+.btn-link:active,
+.primary,
+.fa-primary,
+.no-empty,
+.error,
+.btn-e-primary.btn-bordered,
+.icon-circle.icon-bordered:hover,
+.icon-square.icon-bordered:hover,
+.icon-circle.icon-bordered.fa-primary,
+.icon-square.icon-bordered.fa-primary,
+nav.navbar ul.nav > li > a:hover,
+nav.navbar ul.nav > li > a:focus,
+nav.navbar ul.nav > li > a:active,
+nav.navbar ul.nav > li.active > a,
+nav.navbar ul.nav > li.active > a:hover,
+nav.navbar ul.nav > li.active > a:active,
+nav.navbar ul.nav > li.active > a:focus,
+nav.navbar li.dropdown ul.dropdown-menu > li a:hover,
+nav.navbar li.dropdown ul.dropdown-menu > li a:focus,
+nav.navbar li.dropdown ul.dropdown-menu > li a:active,
+nav.navbar li.dropdown ul.dropdown-menu > li.active > a,
+nav.navbar li.dropdown ul.menu-col > li.active > a,
+nav.navbar-sidebar .dropdown .megamenu-content .col-menu ul.menu-col li a:hover,
+nav.navbar-sidebar ul.nav li.dropdown ul.dropdown-menu li a:hover,
+nav.navbar-sidebar .dropdown .megamenu-content .col-menu ul.menu-col li a:focus,
+nav.navbar-sidebar ul.nav li.dropdown ul.dropdown-menu li a:focus,
+nav.navbar-sidebar .dropdown .megamenu-content .col-menu ul.menu-col li a:active,
+nav.navbar-sidebar ul.nav li.dropdown ul.dropdown-menu li a:active,
+nav.navbar-full .navbar-toggle:hover .fa,
+.btn-navlink,
+.cart-dropdown ul li a:hover,
+.cart-dropdown ul li a:focus,
+.cart-dropdown ul li a:active,
+.captionHeadline1,
+.breadcrumb > li a:hover,
+.breadcrumb > li a:focus,
+.breadcrumb > li a:active,
+.breadcrumb > .active,
+.leftControls-right.owl-theme .owl-controls .owl-buttons div.owl-prev:hover,
+.leftControls-right.owl-theme .owl-controls .owl-buttons div.owl-next:hover,
+.recent-post li a:hover,
+.post-heading .post-data,
+.post-heading h1 a:hover,
+.post-heading h2 a:hover,
+.post-heading h3 a:hover,
+.post-heading h4 a:hover,
+.post-heading h5 a:hover,
+.post-heading h6 a:hover,
+.post-meta a:hover,
+.footer-post ul li a:hover,
+.footer-description > span,
+.cat li a i,
+.cat li a:hover,
+.post-content h5 a:hover,
+.post-content h5 a:focus,
+.post-content h5 a:active,
+.post-content .footer-post ul li a:hover,
+.post-content .footer-post ul li a:focus,
+.post-content .footer-post ul li a:active,
+.post-date,
+.img-containt strong,
+.img-containt h5 a:hover,
+.content-photo .content .title small,
+.option-product p,
+.footer-details > .footer-list i,
+.popular-place .content .price,
+.product-footer button:hover,
+.captionHeadline3 span,
+.captionHeadline2 span,
+footer .link-list li a:hover,
+footer .recent-post li a:hover,
+.process-icon > span,
+.precess-column .text-title{
+    color: #3498db;
+	background:none;
+}
+
+/*
+Primary background
+=========================== */
+.thumbnail-primary,
+.cart-item,
+.top-container,
+.toTop:hover,
+a.openpanel,
+.primary-bg,
+.slider-selection,
+.btn-e-primary,
+.btn-link:before,
+.navbar-toggle:hover .icon-bar,
+.navbar-toggle:focus .icon-bar,
+.navbar-toggle:active .icon-bar,
+.navbar.navbar-white .navbar-toggle:hover .icon-bar,
+.navbar.navbar-white .navbar-toggle:focus .icon-bar,
+.navbar.navbar-white .navbar-toggle:active .icon-bar,
+#parallax-nav li.page-scroll.active a,
+#parallax-nav li.page-scroll a.selected,
+#parallax-nav li.page-scroll:focus a,
+.drop-primary.drop-circle,
+.drop-primary.drop-square,
+.heading-section span,
+.highlight.primary,
+.icons-wrapp .count,
+.text-block .fa,
+.precess-column.hover .precess-icons,
+.icon-circle:hover,
+.icon-square:hover,
+.icons-wrapp.icons-primary,
+.icon-circle.fa-primary,
+.icon-square.fa-primary,
+.box-primary,
+.icon-column.box-primary,
+.icon-top .fa-primary,
+.filter-items li a:hover,
+.filter-items li a.active,
+.filter-items li a.active:hover,
+.filter-items li a.active:focus,
+.filter-items li a.active:active,
+.donut-chart.chart-primary .pie,
+.line-chart li span:before,
+.line-chart li span:after,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.gray-container .nav-tabs > li.active > a,
+.gray-container .nav-tabs > li.active > a:hover,
+.gray-container .nav-tabs > li.active > a:focus,
+.panel-title a:hover .plus,
+.panel-title a .minus,
+.panel-title a:hover .minus,
+.cta-primary,
+.show-caption,
+.hephaistos .tp-bullet:hover,
+.hephaistos .tp-bullet.selected,
+.captionTextline3,
+.circle-progress.primary span,
+.progress.progress-primary .progress-bar,
+div.pp_default .pp_close:hover,
+div.pp_default .pp_expand:hover,
+div.pp_default .pp_contract:hover,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span,
+.owl-theme .owl-controls.clickable .owl-buttons div:hover,
+.tag:hover,
+.tag:focus,
+.tag:active,
+.panel-primary > .panel-heading,
+.product-label,
+.price-lg,
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover,
+.flex-control-paging li a:hover,
+.flex-control-paging li a.flex-active,
+.styled-table thead th,
+.styled-table thead td,
+.basket-shopping,
+.basket-shopping-2,
+.maintenance-icon,
+.maps.map-primary i,
+.pricing.popular .pricing-price,
+.custom-search-head,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box >div >div.xdsoft_current ,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_highlighted_mint ,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_highlighted_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today,
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box >div >div:hover,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current.xdsoft_disabled:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current.xdsoft_disabled:hover,
+.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover,
+.testimonials-single,
+.call-to-action-primary,
+ol.process-line > li.active > .icons > .fa,
+ol.process-line > li:hover > .icons > .fa,
+.maps.map-primary i,
+.rev-linner,
+.cap-link:hover,
+.cap-link:active,
+.img-caption,
+.home-app,
+.cap-link:focus{
+	background-color: #3498db;
+}
+
+.cta-primary-2{
+	background-color: rgba(52, 152, 219, 0.8);
+}
+
+.bar-chart li:nth-child(2n+1) span{
+    background-color: #3498db;
+}
+
+.slider-handle,
+.btn-e-primary:focus,
+.btn-e-primary.focus,
+.btn-e-primary:hover,
+.btn-e-primary:active,
+.btn-e-primary.active,
+.open > .dropdown-toggle.btn-e-primary,
+.btn-e-primary:active:hover,
+.btn-e-primary.active:hover,
+.open > .dropdown-toggle.btn-e-primary:hover,
+.btn-e-primary:active:focus,
+.btn-e-primary.active:focus,
+.open > .dropdown-toggle.btn-e-primary:focus,
+.btn-e-primary:active.focus,
+.btn-e-primary.active.focus,
+.open > .dropdown-toggle.btn-e-primary.focus,
+.show-caption:hover,
+.navlink-right span.cart-item,
+.icon-circle.fa-primary:hover,
+.icon-square.fa-primary:hover{
+    background-color: #2283c3;
+}
+
+.img-caption{
+    background-color: rgba(52, 152, 219, 0.9);
+}
+
+/*
+Primary border
+=========================== */
+nav.navbar li.dropdown ul.dropdown-menu,
+.cart-dropdown,
+.primary-border,
+.btn-e-primary,
+.btn-e-primary.btn-bordered.btn-icon .fa,
+.navbar-nav > li.active > a,
+.dropdown-menu,
+.navbar-toggle:hover,
+.navbar-toggle:focus,
+.navbar-toggle:active,
+.navbar.navbar-white .navbar-toggle:hover,
+.navbar.navbar-white .navbar-toggle:focus,
+.navbar.navbar-white .navbar-toggle:active,
+#parallax-nav li.page-scroll.active,
+#parallax-nav li.page-scroll:active,
+#parallax-nav li.page-scroll:focus,
+.icons-wrapp.icons-primary:before,
+.icon-circle.icon-bordered:hover,
+.icon-square.icon-bordered:hover,
+.icons-wrapp.icons-primary,
+.icon-circle.icon-bordered.fa-primary,
+.icon-square.icon-bordered.fa-primary,
+.line-chart li span:before,
+.line-chart li span:after,
+.form-control:focus,
+.tab-secondary .nav-tabs,
+.headline,
+.panel-primary,
+.filter-items li a:hover,
+.filter-items li a.active,
+.filter-items li a.active:hover,
+.filter-items li a.active:focus,
+.filter-items li a.active:active,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
+.post-heading .post-data,
+.tag:hover,
+.tag:focus,
+.tag:active,
+.flex-control-thumbs img:hover,
+.flex-control-thumbs .flex-active,
+.wrap-form .nav-tabs > li.active > a,
+.pricing.popular,
+.pricing:hover,
+.pricing.secondary:hover .pricing-price,
+.pricing.popular .pricing-price,
+.custom-search-wrapp,
+.custom-search-wrapp .pull-right,
+.icon-top.selected .icon-box-contain,
+ol.process-line > li.active > .icons > .fa,
+ol.process-line > li:hover > .icons > .fa{
+    border-color: #3498db;
+}
+
+.call-to-action-primary,
+.btn-e-primary:focus,
+.btn-e-primary.focus,
+.btn-e-primary:hover,
+.btn-e-primary:active,
+.btn-e-primary.active,
+.open > .dropdown-toggle.btn-e-primary,
+.btn-e-primary:active:hover,
+.btn-e-primary.active:hover,
+.open > .dropdown-toggle.btn-e-primary:hover,
+.btn-e-primary:active:focus,
+.btn-e-primary.active:focus,
+.open > .dropdown-toggle.btn-e-primary:focus,
+.btn-e-primary:active.focus,
+.btn-e-primary.active.focus,
+.open > .dropdown-toggle.btn-e-primary.focus,
+.icon-circle.icon-bordered.fa-primary:hover,
+.icon-square.icon-bordered.fa-primary:hover{
+    border-color: #2283c3;
+}
+
+/*
+Blue color
+=========================== */
+.blue,
+.btn-e-blue.btn-bordered,
+.fa-blue,
+.icon-circle.icon-bordered.fa-blue,
+.icon-square.icon-bordered.fa-blue{
+    color: #3498db;
+	background:none;
+}
+
+.icon-circle.icon-bordered.fa-blue:hover,
+.icon-square.icon-bordered.fa-blue:hover{
+    color: #2283c3;
+}
+
+.blue-bg,
+.btn-e-blue,
+.highlight.blue,
+.icon-circle.fa-blue,
+.icon-square.fa-blue,
+.donut-chart.chart-blue .pie,
+.progress.progress-blue .progress-bar{
+    background-color: #3498db;
+}
+
+.btn-e-blue:focus,
+.btn-e-blue.focus,
+.btn-e-blue:hover,
+.btn-e-blue:active,
+.btn-e-blue.active,
+.open > .dropdown-toggle.btn-e-blue,
+.btn-e-blue:active:hover,
+.btn-e-blue.active:hover,
+.open > .dropdown-toggle.btn-e-blue:hover,
+.btn-e-blue:active:focus,
+.btn-e-blue.active:focus,
+.open > .dropdown-toggle.btn-e-blue:focus,
+.btn-e-blue:active.focus,
+.btn-e-blue.active.focus,
+.open > .dropdown-toggle.btn-e-blue.focus,
+.icon-circle.fa-blue:hover,
+.icon-square.fa-blue:hover{
+    background-color: #2283c3;
+}
+
+.blue-border,
+.btn-e-blue,
+.btn-e-blue.btn-bordered,
+.btn-e-blue.btn-bordered.btn-icon .fa,
+.icon-circle.icon-bordered.fa-blue,
+.icon-square.icon-bordered.fa-blue{
+    border-color: #3498db;
+}
+
+.btn-e-blue:focus,
+.btn-e-blue.focus,
+.btn-e-blue:hover,
+.btn-e-blue:active,
+.btn-e-blue.active,
+.open > .dropdown-toggle.btn-e-blue,
+.btn-e-blue:active:hover,
+.btn-e-blue.active:hover,
+.open > .dropdown-toggle.btn-e-blue:hover,
+.btn-e-blue:active:focus,
+.btn-e-blue.active:focus,
+.open > .dropdown-toggle.btn-e-blue:focus,
+.btn-e-blue:active.focus,
+.btn-e-blue.active.focus,
+.open > .dropdown-toggle.btn-e-blue.focus,
+.icon-circle.icon-bordered.fa-blue:hover,
+.icon-square.icon-bordered.fa-blue:hover{
+    border-color: #2283c3;
+}
+
+.btn-e-blue{
+    border-bottom-color: #2283c3;
+}
+
+.btn-e-blue:focus,
+.btn-e-blue.focus,
+.btn-e-blue:hover,
+.btn-e-blue:active,
+.btn-e-blue.active,
+.open > .dropdown-toggle.btn-e-blue,
+.btn-e-blue:active:hover,
+.btn-e-blue.active:hover,
+.open > .dropdown-toggle.btn-e-blue:hover,
+.btn-e-blue:active:focus,
+.btn-e-blue.active:focus,
+.open > .dropdown-toggle.btn-e-blue:focus,
+.btn-e-blue:active.focus,
+.btn-e-blue.active.focus,
+.open > .dropdown-toggle.btn-e-blue.focus,
+.icon-circle.icon-bordered.fa-blue:hover,
+.icon-square.icon-bordered.fa-blue:hover{
+    border-bottom-color: #2283c3;
+}

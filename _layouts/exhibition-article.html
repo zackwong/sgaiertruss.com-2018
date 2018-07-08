@@ -1,0 +1,15 @@
+---
+layout: article
+---
+<div class="col-md-12">
+  <article class="post post-thumbnail">
+    <div class="post-frame">
+      <div class="post-heading text-center">
+        <h5>{{ page.title }}</h5>
+        <p>{{ page.date | date:"%d %b %Y" }}</p>
+      </div>
+      {{ content }}
+      <p class="margin-top-50"><a href="{{ site.url }}/{{ page.type-en }}/" class="btn-e btn-block btn-e-primary">More {{ page.type }}</a></p>
+    </div>
+  </article>
+</div>

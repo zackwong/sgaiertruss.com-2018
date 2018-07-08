@@ -1,0 +1,119 @@
+---
+layout: default
+category: home
+full_title: POKMEN
+---
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active"><a href="{{ site.url }}/bottle-factory-solution/"><img src="/images/home/billboard-bottle-factory-solution.jpg" alt="瓶厂解决方案"></a></div>
+    <div class="item"><a href="{{ site.url }}/packaging-solutions/"><img src="/images/home/billboard-packaging-solutions.jpg" alt="包装解决方案"></a></div>
+    <div class="item"><a href="{{ site.url }}/liquid-nitrogen-solution/"><img src="/images/home/billboard-liquid-nitrogen-solution.jpg" alt="液氮解决方案"></a></div>
+  </div>
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="contain-wrapp padding-bottom-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="section-heading">
+          <h3>PRODUCTS</h3>
+          <i class="fa fa-thumbs-o-up"></i>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="gallery">
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <div class="img-wrapper">
+              <a href="{{ site.url }}/bottle-factory-solution/"><img src="/images/bottle-factory-solution/bottle-factory-solution.jpg" class="img-responsive" alt="Bottle Factory Solution"></a>
+            </div>
+            <div class="img-containt text-center">
+              <p><span style="font-size:15px">Bottle Factory Solution</span></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <div class="img-wrapper">
+              <a href="{{ site.url }}/packaging-solutions/"><img src="/images/packaging-solutions/packaging-solutions.jpg" class="img-responsive" alt="Packaging Solutions"></a>
+            </div>
+            <div class="img-containt text-center">
+              <p><span style="font-size:15px">Packaging Solutions</span></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <div class="img-wrapper">
+              <a href="{{ site.url }}/liquid-nitrogen-solution/"><img src="/images/liquid-nitrogen-solution/liquid-nitrogen-solution.jpg" class="img-responsive" alt="Liquid Nitrogen Solution"></a>
+            </div>
+            <div class="img-containt text-center">
+              <p><span style="font-size:15px">Liquid Nitrogen Solution</span></p>
+            </div>
+          </div>       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contain-wrapp gray-container padding-bottom-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="section-heading">
+          <h3>COMPANY PROFILE</h3>
+          <i class="fa fa-home"></i>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-6">
+          <a href="{{ site.url }}/about/"><img class="img-responsive img-thumbnail margin-bottom-30" alt="POKMEN Logo" src="/images/home/about.jpg"></a>
+        </div>
+        <div class="col-md-6">
+          <div style="text-indent:2em">
+            <p>Foshan City POKMEN INDUSTRIAL EQUIPMENT CO.LTD has a large number of successful cases, including: gift packaging automation solutions, ultra high speed empty bottle testing and packaging solutions, promotional packaging automation solutions, high speed handle bottle leakage and handle assembly solutions, liquid nitrogen solutions for oil and fat, solution of high speed liquid nitrogen for beverages, solution of sterile liquid nitrogen High efficiency liquid nitrogen cooling tunnel solution, efficient energy saving blow drying system, low cost packaging solution, commercial cold sterilization solution (PEF pulse electric field sterilization, AC high electric field sterilization).</p>
+          </div>
+          <p><a href="{{ site.url }}/about/" class="btn-e btn-block btn-e-primary">Learn More</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 margin-top-60">
+      <div class="section-heading">
+        <h3>EXHIBITION</h3>
+        <i class="fa fa-newspaper-o"></i>
+      </div>
+    </div>
+    <div class="col-md-12 margin-bottom-30">
+      <div class="gallery">
+        <div class="row">{% for post in site.categories["exhibition"] limit:3 %}
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <article class="post post-thumbnail">
+              <div class="img-wrapper">
+                <a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg" class="img-responsive" alt="{{ post.title }}"></a>
+              </div>
+              <div class="post-frame">
+                <div class="post-heading text-center">
+                  <h5><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h5>
+                  <p>{{ post.date | date:"%d %b %Y" }}</p>
+                </div>
+                <p>{{ post.description }}</p>
+                <a href="{{ site.url }}{{ post.url }}" class="btn-e btn-block btn-e-primary">Read More</a>
+              </div>
+            </article>
+          </div>{% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

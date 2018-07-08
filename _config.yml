@@ -1,0 +1,33 @@
+url: http://en.pokmen.cn
+
+title: POKMEN
+
+keywords: POKMEN
+
+description: POKMEN
+
+address: NO 1 Foluo Road 528200 FOSHAN REPUBLICA POP.DE CHINA
+
+tel: 0757-82811202
+
+fax: 0757-82811200
+
+email: sales@pokmen.cn
+
+sales1: 13570235408
+
+sales2: 15015851703
+
+exclude:
+  - README.md
+
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/js
+    - _assets/css
+  compress:
+    css: true
+    js: true
+  gzip: []

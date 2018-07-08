@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="parallax inner-head">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="container">
+        <i class="fa fa-{{ page.icon }}"></i>
+        <h4>{{ page.title }}</h4>
+        <ol class="breadcrumb">
+          <li><a href="{{ site.url }}">Home</a></li>
+          <li><a href="{{ site.url }}/{{ page.type-en }}/">{{ page.type }}</a></li>
+          <li class="active">{{ page.title }}</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contain-wrapp padding-bottom-50">
+  <div class="container">
+    <div class="row">
+      {{ content }}
+    </div>
+  </div>
+</div>

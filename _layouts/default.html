@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}</title>
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <meta name="applicable-device" content="pc,mobile">
+    <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/pokmen-icon.jpg">
+    <meta name="apple-mobile-web-app-title" content="POKMEN">
+    {% stylesheet application %}  
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="container">
+        <div class="top-column-left">
+          <ul class="contact-line">
+            <li><i class="fa fa-envelope"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li><i class="fa fa-phone"></i> {{ site.tel }}</li>
+          </ul>
+        </div>
+        <div class="top-column-right">
+          <ul class="register">
+            <li class="dropdown language" style="display: block;">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i> 语言</a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.pokmen.cn">中文</a></li>
+                <li><a href="{{ site.url }}" target="_blank">English <i class="fa fa-check"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <nav class="navbar navbar-default navbar-light megamenu">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i class="fa fa-bars"></i></button>
+          <a class="navbar-brand logo" href="{{ site.url }}">
+            <img src="/images/assets/pokmen-logo.png" alt="POKMEN Logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About POKMEN</a></li>
+            <li class="dropdown megamenu-fw {% if page.category == 'products' %}active{% endif %}">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+              <ul class="dropdown-menu megamenu-content" role="menu">
+                <li>
+                  <div class="row">
+                    <div class="col-menu col-md-4">
+                      <a href="{{ site.url }}/bottle-factory-solution/">
+                        <img class="img-responsive center-block margin-bottom-20" src="/images/bottle-factory-solution/nav-bottle-factory-solution.jpg" alt="Bottle Factory Solution">
+                      </a>
+                    </div>
+                    <div class="col-menu col-md-4">
+                      <a href="{{ site.url }}/packaging-solutions/">
+                        <img class="img-responsive center-block margin-bottom-20" src="/images/packaging-solutions/nav-packaging-solutions.jpg" alt="Packaging Solution">
+                      </a>
+                    </div>
+                    <div class="col-menu col-md-4">
+                      <a href="{{ site.url }}/liquid-nitrogen-solution/">
+                        <img class="img-responsive center-block margin-bottom-20" src="/images/liquid-nitrogen-solution/nav-liquid-nitrogen-solution.jpg" alt="Liquid Nitrogen Solution">
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="{% if page.category == 'spare-parts' %}active{% endif %}"><a href="{{ site.url }}/spare-parts/">Spare Parts</a></li>
+            <li class="{% if page.category == 'exhibition' %}active{% endif %}"><a href="{{ site.url }}/exhibition/">Exhibition</a></li>
+            <li class="{% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {{ content }}
+    <div class="clearfix"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-description text-center">
+              <a href="{{ site.url }}"><img class="img-responsive" src="/images/assets/pokmen-logo-foot.png" alt="POKMEN Logo"></a>
+              <div class="widget" id="text-footer">
+                <p class="primary">RELIABLE CUSTOMER DESIGN</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <h5>About POKMEN</h5>
+              <p>Foshan City POKMEN INDUSTRIAL EQUIPMENT CO.LTD is a mechanical and electrical equipment company which integrates trade, technology and service. The agency brands include: AND&OR, P&S, ACMI, NORTAN, BAUMER, CRYOTHERM, TECHNIFAB, DOHMEYER.</p>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <h5>Products</h5>
+              <ul class="list-icons">
+                <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/bottle-factory-solution/">Bottle Factory Solution</a></li>
+                <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/packaging-solutions/">Packaging Solution</a></li>
+                <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/liquid-nitrogen-solution/">Liquid Nitrogen Solution</a></li>
+                <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/spare-parts/">Spare Parts</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <h5>Contact Us</h5>
+              <ul class="list-icons">
+                <li><i class="fa fa-home"></i><a href="{{ site.url }}/contact/">{{ site.address }}</a></li>
+                <li><i class="fa fa-phone"></i><a href="{{ site.tel }}/contact/">{{ site.tel }}</a></li>
+                <li><i class="fa fa-fax"></i><a href="{{ site.tel }}/contact/">{{ site.fax }}</a></li>
+                <li><i class="fa fa-envelope"></i><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subfooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="footer-brand margin-bottom-10">
+                <p>Copyright © 2012-2018 Foshan City POKMEN INDUSTRIAL EQUIPMENT CO.LTD | <a href="{{ site.url }}/sitemap.xml" target="_blank">Sitemap</a> | Website designed by <a href="https://gdky.net" target="_blank">OSW</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="toTop"><i class="fa fa-chevron-up"></i></a>
+    {% javascript application %}
+  </body>
+</html>
