@@ -273,7 +273,7 @@ ul.register {
 }
 ul.register .dropdown li,
 ul.register .dropdown .dropdown-menu {
-    background: #e94f25;
+    background: #3498db;
     top: 27px;
     left: -5px;
     padding: 4px 0;
@@ -290,7 +290,7 @@ ul.register .language li a {
     margin-bottom: 1px;
 }
 ul.register .language li a:hover {
-    background: #e94f25;
+    background: #3498db;
     color: #222;
 }
 .top-social-network a {
@@ -1640,7 +1640,7 @@ th {
     border: 2px solid #d1d1d1;
 }
 .panel-primary {
-    border: 2px solid #e94f25;
+    border: 2px solid #3498db;
 }
 .panel-aqua {
     border: 2px solid #27d7e7;
@@ -1664,7 +1664,7 @@ th {
     border: 2px solid #79d5b3;
 }
 .panel-orange {
-    border: 2px solid #e94f25;
+    border: 2px solid #3498db;
 }
 .panel-purple {
     border: 2px solid #9b6bcc;
@@ -1722,7 +1722,7 @@ th {
     margin-bottom: 0;
 }
 .panel-primary > .panel-heading {
-    background: #e94f25;
+    background: #3498db;
     color: #fff;
     padding: 5px 15px;
     margin-bottom: 0;
@@ -1770,7 +1770,7 @@ th {
     margin-bottom: 0;
 }
 .panel-orange > .panel-heading {
-    background: #e94f25;
+    background: #3498db;
     color: #fff;
     padding: 5px 15px;
     margin-bottom: 0;
@@ -2462,7 +2462,7 @@ ol.process-line > li > p:last-child {
 }
 .cta-default .col-icon .fa:hover,
 .cta-parallax .col-icon .fa:hover {
-    background-color: #e94f25;
+    background-color: #3498db;
     color: #fff;
 }
 .cta-primary .col-icon .fa:hover,
@@ -2490,7 +2490,7 @@ ol.process-line > li > p:last-child {
 }
 .cta-default .cta-box:hover,
 .cta-parallax .cta-box:hover {
-    color: #e94f25;
+    color: #3498db;
 }
 .cta-primary .cta-box:hover,
 .cta-primary-2 .cta-box:hover {
@@ -2518,7 +2518,7 @@ ol.process-line > li > p:last-child {
     line-height: 46px;
     text-align: center;
     position: absolute;
-    background: #e94f25;
+    background: #3498db;
     margin-left: -22.5px;
     display: inline-block;
 }
@@ -2813,7 +2813,7 @@ ol.process-line > li > p:last-child {
     background: #79d5b3;
 }
 .icon-column.box-orange {
-    background: #e94f25;
+    background: #3498db;
 }
 .icon-column.box-purple {
     background: #9b6bcc;
@@ -2897,7 +2897,7 @@ footer {
     margin-bottom: 15px;
 }
 .footer-description span {
-    color: #e94f25;
+    color: #3498db;
     margin-left: 25px;
 }
 .footer-description p {
