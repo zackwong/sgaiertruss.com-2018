@@ -1,22 +1,18 @@
 url: https://www.rszx.org
 
-title: POKMEN
+title: Sgaier Truss
 
-keywords: POKMEN
+keywords: Sgaier Truss
 
-description: POKMEN
+description: Sgaier Truss
 
-address: NO 1 Foluo Road 528200 FOSHAN REPUBLICA POP.DE CHINA
+address: C3,No.6,Changdun Road,GuanYong Village,Shiqi Town,Panyu District,Guangzhou City,Guangdong Province,China
 
-tel: 0757-82811202
+tel: 0757-12345678
 
-fax: 0757-82811200
+fax: 0757-12345678
 
-email: sales@pokmen.cn
-
-sales1: 13570235408
-
-sales2: 15015851703
+email: abc@abc.com
 
 exclude:
   - README.md
