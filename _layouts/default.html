@@ -9,9 +9,9 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
     <meta name="applicable-device" content="pc,mobile">
-    <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/pokmen-icon.jpg">
-    <meta name="apple-mobile-web-app-title" content="POKMEN">
-    {% stylesheet application %}  
+    <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/sgaier-truss-icon.jpg">
+    <meta name="apple-mobile-web-app-title" content="Sgaier Truss">
+    {% stylesheet application %}
   </head>
   <body>
     <div class="top-container">
@@ -27,7 +27,7 @@
             <li class="dropdown language" style="display: block;">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i> 语言</a>
               <ul class="dropdown-menu">
-                <li><a href="http://www.pokmen.cn">中文</a></li>
+                <li><a href="http://www.Sgaier Truss.cn">中文</a></li>
                 <li><a href="{{ site.url }}" target="_blank">English <i class="fa fa-check"></i></a></li>
               </ul>
             </li>
@@ -41,12 +41,26 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i class="fa fa-bars"></i></button>
           <a class="navbar-brand logo" href="{{ site.url }}">
-            <img src="/images/assets/pokmen-logo.png" alt="POKMEN Logo">
+            <img src="/images/assets/sgaier-truss-logo.png" alt="Sgaier Truss Logo">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
-            <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About POKMEN</a></li>
+            <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About Sgaier Truss</a></li>
+            <li class="dropdown {% if page.category == 'products' %}active{% endif %}">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+              <ul class="dropdown-menu">
+                <li class="{% if page.title == 'Truss' %}active{% endif %}"><a href="{{ site.url }}/truss/">Truss</a></li>
+                <li class="{% if page.title == 'Stage' %}active{% endif %}"><a href="{{ site.url }}/stage/">Stage</a></li>
+                <li class="{% if page.title == 'Bleachers' %}active{% endif %}"><a href="{{ site.url }}/bleachers/">Bleachers</a></li>
+                <li class="{% if page.title == 'Barrier' %}active{% endif %}"><a href="{{ site.url }}/barrier/">Barrier</a></li>
+                <li class="{% if page.title == 'Portable Bar/Dj Booth/Bar Furniture' %}active{% endif %}"><a href="{{ site.url }}/bar/">Portable Bar/Dj Booth/Bar Furniture</a></li>
+                <li class="{% if page.title == 'Scaffolding' %}active{% endif %}"><a href="{{ site.url }}/scaffolding/">Scaffolding</a></li>
+                <li class="{% if page.title == 'Choir Riser' %}active{% endif %}"><a href="{{ site.url }}/choir-riser/">Choir Riser</a></li>
+                <li class="{% if page.title == 'Cable Ramp' %}active{% endif %}"><a href="{{ site.url }}/cable-ramp/">Cable Ramp</a></li>
+                <li class="{% if page.title == 'Flight Case' %}active{% endif %}"><a href="{{ site.url }}/flight-case/">Flight Case</a></li>
+              </ul>
+            </li>
             <li class="dropdown megamenu-fw {% if page.category == 'products' %}active{% endif %}">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products</a>
               <ul class="dropdown-menu megamenu-content" role="menu">
@@ -71,8 +85,7 @@
                 </li>
               </ul>
             </li>
-            <li class="{% if page.category == 'spare-parts' %}active{% endif %}"><a href="{{ site.url }}/spare-parts/">Spare Parts</a></li>
-            <li class="{% if page.category == 'exhibition' %}active{% endif %}"><a href="{{ site.url }}/exhibition/">Exhibition</a></li>
+            <li class="{% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
             <li class="{% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact Us</a></li>
           </ul>
         </div>
@@ -85,14 +98,14 @@
         <div class="row">
           <div class="col-md-12">
             <div class="footer-description text-center">
-              <a href="{{ site.url }}"><img class="img-responsive" src="/images/assets/pokmen-logo-foot.png" alt="POKMEN Logo"></a>
+              <a href="{{ site.url }}"><img class="img-responsive" src="/images/assets/sgaier-truss-logo.png" alt="Sgaier Truss Logo"></a>
               <div class="widget" id="text-footer">
                 <p class="primary">RELIABLE CUSTOMER DESIGN</p>
               </div>
             </div>
             <div class="col-xs-12 col-sm-5">
-              <h5>About POKMEN</h5>
-              <p>Foshan City POKMEN INDUSTRIAL EQUIPMENT CO.LTD is a mechanical and electrical equipment company which integrates trade, technology and service. The agency brands include: AND&OR, P&S, ACMI, NORTAN, BAUMER, CRYOTHERM, TECHNIFAB, DOHMEYER.</p>
+              <h5>About Sgaier Truss</h5>
+              <p>Foshan City Sgaier Truss INDUSTRIAL EQUIPMENT CO.LTD is a mechanical and electrical equipment company which integrates trade, technology and service. The agency brands include: AND&OR, P&S, ACMI, NORTAN, BAUMER, CRYOTHERM, TECHNIFAB, DOHMEYER.</p>
             </div>
             <div class="col-xs-12 col-sm-3">
               <h5>Products</h5>
@@ -120,7 +133,7 @@
           <div class="row">
             <div class="col-md-12 text-center">
               <div class="footer-brand margin-bottom-10">
-                <p>Copyright © 2012-2018 Foshan City POKMEN INDUSTRIAL EQUIPMENT CO.LTD | <a href="{{ site.url }}/sitemap.xml" target="_blank">Sitemap</a> | Website designed by <a href="https://gdky.net" target="_blank">OSW</a></p>
+                <p>Copyright © 2012-2018 Foshan City Sgaier Truss INDUSTRIAL EQUIPMENT CO.LTD | <a href="{{ site.url }}/sitemap.xml" target="_blank">Sitemap</a> | Website designed by <a href="https://gdky.net" target="_blank">OSW</a></p>
               </div>
             </div>
           </div>
