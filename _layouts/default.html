@@ -84,12 +84,6 @@
               </ul>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <h5 class="text-center">News</h5>
-              <ul class="list-icons">{% for post in site.categories["news"] %}
-                <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
-              </ul>
-            </div>
-            <div class="col-xs-12 col-sm-4">
               <h5 class="text-center">Products</h5>
               <div class="col-xs-12 col-sm-6">
                 <ul class="list-icons">
@@ -100,7 +94,7 @@
                   <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/bar/">Portable Bar/Dj Booth/Bar Furniture</a></li>
                 </ul>
               </div>
-              <div class="col-xs-12 col-sm-4">
+              <div class="col-xs-12 col-sm-6">
                 <ul class="list-icons">
                   <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/scaffolding/">Scaffolding</a></li>
                   <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/choir-riser/">Choir Riser</a></li>
@@ -108,6 +102,12 @@
                   <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/flight-case/">Flight Case</a></li>
                 </ul>
               </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <h5 class="text-center">News</h5>
+              <ul class="list-icons">{% for post in site.categories["news"] %}
+                <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+              </ul>
             </div>
           </div>
         </div>
