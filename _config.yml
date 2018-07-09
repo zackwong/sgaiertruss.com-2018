@@ -14,6 +14,10 @@ fax: 0757-12345678
 
 email: abc@abc.com
 
+facebook: https://www.facebook.com/sgaiertruss
+
+linkedin: https://www.linkedin.com/company/sgaier-truss-co-ltd/
+
 exclude:
   - README.md
 
