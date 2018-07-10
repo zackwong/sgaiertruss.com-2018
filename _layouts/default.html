@@ -16,16 +16,13 @@
   <body>
     <div class="top-container">
       <div class="container">
-        <div class="top-column-left">
-          <ul class="contact-line">
-            <li><i class="fa fa-envelope"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            <li><i class="fa fa-phone"></i> {{ site.tel }}</li>
-          </ul>
-        </div>
         <div class="top-column-right">
           <div class="top-social-network">
             <a href="{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="{{ site.youtube }}" target="_blank"><i class="fa fa-youtube-play"></i></a>
+            <a href="{{ site.vimeo }}" target="_blank"><i class="fa fa-vimeo"></i></a>
           </div>
         </div>
       </div>
@@ -41,7 +38,6 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
-            <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About Sgaier Truss</a></li>
             <li class="dropdown {% if page.category == 'products' %}active{% endif %}">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products</a>
               <ul class="dropdown-menu">
@@ -57,6 +53,7 @@
               </ul>
             </li>
             <li class="{% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
+            <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About Sgaier Truss</a></li>
             <li class="{% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact Us</a></li>
           </ul>
         </div>
