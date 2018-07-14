@@ -1,0 +1,44 @@
+---
+layout: article
+---
+<div class="col-md-5">
+  <p align="center"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/{{ page.type-en }}/{{ page.image }}.jpg"></p>
+</div>
+<div class="col-md-7">
+  <h5>{{ page.title }}</h5>
+  {{ content }}
+</div>
+<div class="col-md-12 margin-top-30 margin-bottom-50">
+  <div class="tab-secondary">
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab">名称1</a></li>
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab">名称2</a></li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="tab1">
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab2">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-8 col-md-offset-2">
+  <div class="section-heading">
+    <h3>更多{{ page.type }}</h3>
+    <i class="fa fa-{{ page.icon }}"></i>
+  </div>
+</div>
+<div class="col-md-12">
+  <div class="gallery">
+    <div class="row">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
+      <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+        <div class="img-wrapper">
+          <a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg" class="img-responsive" alt="{{ post.title }}"></a>
+        </div>
+        <div class="img-containt text-center">
+          <p><span style="font-size:15px">{{ post.title }}</span></p>
+        </div>
+      </div>{% endif %}{% endfor %}
+    </div>
+  </div>
+</div>

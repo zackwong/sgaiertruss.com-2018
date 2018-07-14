@@ -1,0 +1,17 @@
+---
+layout: pages
+---
+<div class="col-md-12">
+  <div class="gallery">
+    <div class="row">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
+      <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+        <div class="img-wrapper">
+          <a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg" class="img-responsive" alt="{{ post.title }}"></a>
+        </div>
+        <div class="img-containt text-center">
+          <p><span style="font-size:15px">{{ post.title }}</span></p>
+        </div>
+      </div>{% endif %}{% endfor %}
+    </div>
+  </div>
+</div>
