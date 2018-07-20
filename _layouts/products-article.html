@@ -8,12 +8,16 @@ layout: article
   <h4 class="text-center">{{ page.title }}</h4>
   {{ content }}
 </div>
-<div class="col-md-8 col-md-offset-2">
-  <div class="section-heading">
-    <h3>Case</h3>
-    <i class="fa fa-{{ page.icon }}"></i>
-  </div>
-</div>{% if page.case == 'six' %}
+<div class="col-md-12 margin-top-30 margin-bottom-50">
+  <div class="tab-secondary">
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab">Case</a></li>
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab">Video</a></li>
+      <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab">More {{ page.type }}</a></li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="tab1">
+        <div class="row">{% if page.case == 'six' %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
             <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-1.jpg"></a></p>
           </div>
@@ -32,11 +36,22 @@ layout: article
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
             <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-6.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-6.jpg"></a></p>
           </div>{% endif %}
-
-<div class="col-md-8 col-md-offset-2 margin-top-30">
-  <div class="section-heading">
-    <h3>More {{ page.type }}</h3>
-    <i class="fa fa-{{ page.icon }}"></i>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab2">
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab3">
+        <div class="row">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <div class="img-wrapper">
+              <a href="{{ site.url }}{{ post.url }}"><img src="/images/products/{{ post.image }}.jpg" class="img-responsive" alt="{{ post.title }}"></a>
+            </div>
+            <div class="img-containt text-center">
+              <p><span style="font-size:15px">{{ post.title }}</span></p>
+            </div>
+          </div>{% endif %}{% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-{% include products-list.html %}
