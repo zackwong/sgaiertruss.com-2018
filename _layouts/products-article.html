@@ -15,7 +15,7 @@ layout: article
       <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab">Video</a></li>
     </ul>
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="tab1">{% if page.pic == 'two' %}
+      <div role="tabpanel" class="tab-pane active" id="tab1">{% if page.case == 'two' %}
         <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
           <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-1.jpg"></a></p>
         </div>{% endif %}
