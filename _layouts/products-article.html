@@ -11,8 +11,8 @@ layout: article
 <div class="col-md-12 margin-top-30 margin-bottom-50">
   <div class="tab-secondary">
     <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab">Case</a></li>
-      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab">Video</a></li>
+      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab">Case</a></li>{% if page.video == 'wu' %}{% else %}
+      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab">Video</a></li>{% endif %}
       <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab">More {{ page.type }}</a></li>
     </ul>
     <div class="tab-content">
@@ -37,9 +37,9 @@ layout: article
             <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-6.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-6.jpg"></a></p>
           </div>{% endif %}
         </div>
-      </div>
+      </div>{% if page.video == 'wu' %}{% else %}
       <div role="tabpanel" class="tab-pane" id="tab2">
-      </div>
+      </div>{% endif %}
       <div role="tabpanel" class="tab-pane" id="tab3">
         <div class="row">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
