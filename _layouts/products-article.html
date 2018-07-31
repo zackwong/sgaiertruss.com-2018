@@ -205,7 +205,7 @@ layout: article
       </div>{% endif %}{% if page.video == 'wu' %}{% else %}
       <div role="tabpanel" class="tab-pane" id="tab2">
       </div>{% endif %}
-      <div role="tabpanel" class="tab-pane" id="tab3">
+      <div role="tabpanel" class="tab-pane {% if page.case == 'wu' %}active{% endif %}" id="tab3">
         <div class="row">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
             <div class="img-wrapper">
