@@ -16,7 +16,7 @@ layout: article
       <li role="presentation" class="{% if page.tab == 'more' %}active{% endif %}"><a href="#tab3" role="tab" data-toggle="tab">More {{ page.type }}</a></li>
     </ul>
     <div class="tab-content">{% if page.case == 'wu' %}{% else %}
-      <div role="tabpanel" class="tab-pane active" id="tab1">
+      <div role="tabpanel" class="tab-pane {% if page.tab == 'case' %}active{% endif %}" id="tab1">
         <div class="row">{% if page.case == 'one' %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
             <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-1.jpg"></a></p>
@@ -203,9 +203,9 @@ layout: article
           </div>{% endif %}
         </div>
       </div>{% endif %}{% if page.video == 'wu' %}{% else %}
-      <div role="tabpanel" class="tab-pane" id="tab2">
+      <div role="tabpanel" class="tab-pane {% if page.tab == 'video' %}active{% endif %}" id="tab2">
       </div>{% endif %}
-      <div role="tabpanel" class="tab-pane {% if page.case == 'wu' %}active{% endif %}" id="tab3">
+      <div role="tabpanel" class="tab-pane {% if page.tab == 'more' %}active{% endif %}" id="tab3">
         <div class="row">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
             <div class="img-wrapper">
