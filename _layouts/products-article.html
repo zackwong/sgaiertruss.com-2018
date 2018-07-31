@@ -11,9 +11,9 @@ layout: article
 <div class="col-md-12 margin-top-30 margin-bottom-50">
   <div class="tab-secondary">
     <ul class="nav nav-tabs" role="tablist">{% if page.case == 'wu' %}{% else %}
-      <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab">Case</a></li>{% endif %}{% if page.video == 'wu' %}{% else %}
-      <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab">Video</a></li>{% endif %}
-      <li role="presentation" class="{% if page.case == 'wu' %}active{% endif %}"><a href="#tab3" role="tab" data-toggle="tab">More {{ page.type }}</a></li>
+      <li role="presentation" class="{% if page.tab == 'case' %}active{% endif %}"><a href="#tab1" role="tab" data-toggle="tab">Case</a></li>{% endif %}{% if page.video == 'wu' %}{% else %}
+      <li role="presentation" class="{% if page.tab == 'video' %}active{% endif %}"><a href="#tab2" role="tab" data-toggle="tab">Video</a></li>{% endif %}
+      <li role="presentation" class="{% if page.tab == 'more' %}active{% endif %}"><a href="#tab3" role="tab" data-toggle="tab">More {{ page.type }}</a></li>
     </ul>
     <div class="tab-content">{% if page.case == 'wu' %}{% else %}
       <div role="tabpanel" class="tab-pane active" id="tab1">
