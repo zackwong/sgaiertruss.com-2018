@@ -11,7 +11,8 @@ layout: article
 <div class="col-md-12 margin-top-30 margin-bottom-50">
   <div class="tab-secondary">
     <ul class="nav nav-tabs" role="tablist">{% if page.case == 'wu' %}{% else %}
-      <li role="presentation" class="{% if page.tab == 'case' %}active{% endif %}"><a href="#tab1" role="tab" data-toggle="tab">Case</a></li>{% endif %}{% if page.video == 'wu' %}{% else %}
+      <li role="presentation" class="{% if page.tab == 'case' %}active{% endif %}"><a href="#tab1" role="tab" data-toggle="tab">Case</a></li>{% endif %}{% if page.photo == 'wu' %}{% else %}
+      <li role="presentation" class="{% if page.tab == 'photo' %}active{% endif %}"><a href="#photo" role="tab" data-toggle="tab">Photo</a></li>{% endif %}{% if page.video == 'wu' %}{% else %}
       <li role="presentation" class="{% if page.tab == 'video' %}active{% endif %}"><a href="#tab2" role="tab" data-toggle="tab">Video</a></li>{% endif %}
       <li role="presentation" class="{% if page.tab == 'more' %}active{% endif %}"><a href="#tab3" role="tab" data-toggle="tab">More {{ page.type }}</a></li>
     </ul>
@@ -19,130 +20,130 @@ layout: article
       <div role="tabpanel" class="tab-pane {% if page.tab == 'case' %}active{% endif %}" id="tab1">
         <div class="row">{% if page.case == 'one' %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-1.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-1.jpg"></a></p>
           </div>{% endif %}{% if page.case == 'two' %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-1.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-1.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-2.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-2.jpg"></a></p>
           </div>{% endif %}{% if page.case == 'three' %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-1.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-1.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-2.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-2.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-3.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-3.jpg"></a></p>
           </div>{% endif %}{% if page.case == 'four' %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-1.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-1.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-2.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-2.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-3.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-3.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-4.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-4.jpg"></a></p>
           </div>{% endif %}{% if page.case == 'five' %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-1.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-1.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-2.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-2.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-3.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-3.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-4.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-4.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-5.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-5.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-5.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-5.jpg"></a></p>
           </div>{% endif %}{% if page.case == 'six' %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-1.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-1.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-2.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-2.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-3.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-3.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-4.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-4.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-5.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-5.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-5.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-5.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-6.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-6.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-6.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-6.jpg"></a></p>
           </div>{% endif %}{% if page.case == 'eight' %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-1.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-1.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-2.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-2.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-3.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-3.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-4.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-4.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-5.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-5.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-5.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-5.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-6.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-6.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-6.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-6.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-7.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-7.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-7.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-7.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-8.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-8.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-8.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-8.jpg"></a></p>
           </div>{% endif %}{% if page.case == 'thirteen' %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-1.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-1.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-2.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-2.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-3.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-3.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-4.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-4.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-5.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-5.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-5.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-5.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-6.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-6.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-6.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-6.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-7.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-7.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-7.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-7.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-8.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-8.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-8.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-8.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-9.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-9.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-9.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-9.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-10.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-10.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-10.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-10.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-11.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-11.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-11.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-11.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-12.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-12.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-12.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-12.jpg"></a></p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-13.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-13.jpg"></a></p>
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-case-13.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-case-13.jpg"></a></p>
           </div>{% endif %}{% if page.type-en == 'truss' or page.type-en == 'stage' %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
             <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/truss-stage-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/truss-stage-1.jpg"></a></p>
@@ -200,6 +201,67 @@ layout: article
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
             <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/truss-stage-19.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/truss-stage-19.jpg"></a></p>
+          </div>{% endif %}
+        </div>
+      </div>{% endif %}{% if page.photo == 'wu' %}{% else %}
+      <div role="tabpanel" class="tab-pane {% if page.tab == 'photo' %}active{% endif %}" id="photo">
+        <div class="row">{% if page.photo == 'nine' %}
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-1.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-2.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-3.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-4.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-5.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-5.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-6.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-6.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-7.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-7.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-8.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-8.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-9.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-9.jpg"></a></p>
+          </div>{% endif %}{% if page.photo == 'ten' %}
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-1.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-1.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-2.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-2.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-3.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-3.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-4.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-4.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-5.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-5.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-6.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-6.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-7.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-7.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-8.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-8.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-9.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-9.jpg"></a></p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
+            <p align="center"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-photo-10.jpg"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}-photo-10.jpg"></a></p>
           </div>{% endif %}
         </div>
       </div>{% endif %}{% if page.video == 'wu' %}{% else %}
