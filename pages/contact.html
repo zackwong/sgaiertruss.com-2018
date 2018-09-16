@@ -7,30 +7,32 @@ title: Contact Us
 keywords: 
 description: 
 ---
-<div class="col-md-8 col-md-offset-2">
-  <div class="section-heading">
-    <h3>Contact Us</h3>
-    <i class="fa fa-phone"></i>
+<div itemscope itemtype="http://schema.org/Organization">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="section-heading">
+      <h3><span itemprop="name" style="font-weight:900">Contact Us</span></h3>
+      <i class="fa fa-phone"></i>
+    </div>
   </div>
-</div>
-<div class="col-md-6 margin-bottom-30">
-  <div class="contact-detail">
-    <ul class="list-unstyled">
-      <li>
-        <h6><i class="fa fa-home fa-2x fa-primary"></i> Address</h6>
-        <p>{{ site.address }}</p>
-      </li>
-      <li>
-        <h6><i class="fa fa-phone fa-2x fa-primary"></i> Phone</h6>
-        <p><a href="tel:{{ site.tel }}">{{ site.tel }}</a></p>
-      </li>
-      <li>
-        <h6><i class="fa fa-envelope fa-2x fa-primary"></i> E-mail</h6>
-        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-      </li>
-    </ul>
+  <div class="col-md-6 margin-bottom-30">
+    <div class="contact-detail">
+      <ul class="list-unstyled">
+        <li>
+          <h6><i class="fa fa-home fa-2x fa-primary"></i> Address</h6>
+          <p><span itemprop="address">{{ site.address }}</span></p>
+        </li>
+        <li>
+          <h6><i class="fa fa-phone fa-2x fa-primary"></i> Phone</h6>
+          <p><a href="tel:{{ site.tel }}"><span itemprop="telephone">{{ site.tel }}</span></a></p>
+        </li>
+        <li>
+          <h6><i class="fa fa-envelope fa-2x fa-primary"></i> E-mail</h6>
+          <p><a href="mailto:{{ site.email }}"><span itemprop="email">{{ site.email }}</span></a></p>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<div class="col-md-6 margin-bottom-30">
-  <p align="center"><a href="https://goo.gl/maps/ejgXrcN6dun" target="_blank"><img class="img-responsive img-thumbnail" alt="Sgaier Truss Map" src="/images/contact/map.jpg"></a></p>
+  <div class="col-md-6 margin-bottom-30">
+    <p align="center"><a itemprop="url" href="https://goo.gl/maps/ejgXrcN6dun" target="_blank"><img itemprop="image" class="img-responsive img-thumbnail" alt="Sgaier Truss Map" src="/images/contact/map.jpg"></a></p>
+  </div>
 </div>
