@@ -1,12 +1,14 @@
 ---
 layout: article
 ---
-<div class="col-md-5">
-  <p align="center"><img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}.jpg"></p>
-</div>
-<div class="col-md-7">
-  <h4 class="text-center">{{ page.title }}</h4>
-  {{ content }}
+<div itemscope itemtype="http://schema.org/Product">
+  <div class="col-md-5">
+    <p align="center"><img itemprop="image" class="img-responsive img-thumbnail" alt="{{ page.title }}" src="/images/products/{{ page.image }}.jpg"></p>
+  </div>
+  <div class="col-md-7">
+    <h4 class="text-center"><span itemprop="name">{{ page.title }}</span></h4>
+    {{ content }}
+  </div>
 </div>
 <div class="col-md-12 margin-top-30 margin-bottom-50">
   <div class="tab-secondary">
