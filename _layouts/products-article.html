@@ -213,14 +213,14 @@ layout: article
       <div role="tabpanel" class="tab-pane {% if page.tab == 'more' %}active{% endif %}" id="tab3">
         <div class="row">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
           <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-30">
-            <div itemscope itemtype="http://schema.org/Product">
+            
               <div class="img-wrapper">
                 <a itemprop="url" href="{{ site.url }}{{ post.url }}"><img itemprop="image" src="/images/products/{{ post.image }}.jpg" class="img-responsive" alt="{{ post.title }}"></a>
               </div>
               <div class="img-containt text-center">
                 <p><span itemprop="name" style="font-size:15px">{{ post.title }}</span></p>
               </div>
-            </div>
+            
           </div>{% endif %}{% endfor %}
         </div>
       </div>
