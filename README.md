@@ -14,7 +14,7 @@ sgaiertruss.com-2018
     server {
       listen 443 ssl;
       server_name www.sgaiertruss.com;
-      ssl_certificate sgaiertruss.crt;
+      ssl_certificate sgaiertruss.pem;
       ssl_certificate_key sgaiertruss.key;
       index index.html;
       root /srv/sgaiertruss.com-2018/_site;
@@ -26,7 +26,7 @@ sgaiertruss.com-2018
     server {
         listen 443 ssl;
         server_name sgaiertruss.com;
-        ssl_certificate sgaiertruss.crt;
+        ssl_certificate sgaiertruss.pem;
         ssl_certificate_key sgaiertruss.key;
         return 301 https://www.sgaiertruss.com$request_uri;
     }
